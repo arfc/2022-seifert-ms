@@ -1,6 +1,11 @@
 %% Package and Class "uiucthesis2014" for use with LaTeX2e.
 \documentclass[edeposit,fullpage]{uiucthesis2018}
 
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem} % \ce{^{227}_{90}Th+}
 
 \usepackage[acronym,toc]{glossaries}
 \include{acros}
@@ -74,14 +79,15 @@
 \tikzstyle{arrow} = [thick,->,>=stealth]
 
 
-\title{Example Template}
-\author{Charles Bae}
+\title{Seifert Thesis}
+\author{Luke Seifert}
 \department{Nuclear, Plasma, Radiological Engineering}
-\schools{B.S., University of Illinois - Urbana Champaign, 2017}
+%\schools{B.S., University of Illinois - Urbana Champaign, 2017}
 \msthesis
-\advisor{Kathryn D. Huff}
-\degreeyear{2018}
-\committee{Assistant Professor Kathryn D. Huff, Adviser \\ Professor Segundo Lector }
+\advisor{}
+\degreeyear{2022}
+\committee{}
+%\committee{Assistant Professor Kathryn D. Huff, Adviser \\ Professor Segundo Lector }
 
 
 \begin{document}
@@ -127,6 +133,9 @@ Acks.
 
 \chapter{Introduction}
 \input{introduction}
+
+\chapter{Literature Review}
+\input{litrev}
 
 \chapter*{Appendix}
 \input{appendix}
